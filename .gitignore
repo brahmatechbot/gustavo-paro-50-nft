@@ -1,0 +1,15 @@
+# Foundry
+cache/
+out/
+broadcast/
+
+# Local env/secrets
+.env
+.env.*
+*.pem
+*.key
+
+# OS/editor
+.DS_Store
+.vscode/
+.idea/

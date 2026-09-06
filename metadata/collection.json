@@ -1,0 +1,8 @@
+{
+  "name": "Gustavo Paro 50",
+  "description": "Coleção ERC-721 one-of-one em homenagem ao aniversário de 50 anos de Gustavo Paro.",
+  "image": "https://brahmatechbot.github.io/gustavo-paro-50-nft/assets/gustavo-paro-50.jpg",
+  "external_link": "https://www.linkedin.com/in/gustavoparo/",
+  "seller_fee_basis_points": 0,
+  "fee_recipient": "0x0000000000000000000000000000000000000000"
+}

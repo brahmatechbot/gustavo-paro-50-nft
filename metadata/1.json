@@ -1,0 +1,32 @@
+{
+  "name": "Gustavo Paro 50 — Tribute #1",
+  "description": "NFT one-of-one em homenagem ao aniversário de 50 anos de Gustavo Paro, celebrando trajetória, amizade, energia empreendedora e presença humana. Criado por Sancho/Novatrix Tech a pedido de Jeff Prestes.",
+  "image": "https://brahmatechbot.github.io/gustavo-paro-50-nft/assets/gustavo-paro-50.jpg",
+  "external_url": "https://www.linkedin.com/in/gustavoparo/",
+  "attributes": [
+    {
+      "trait_type": "Occasion",
+      "value": "50th Birthday"
+    },
+    {
+      "trait_type": "Collection",
+      "value": "Gustavo Paro 50"
+    },
+    {
+      "trait_type": "Edition",
+      "value": "One of One"
+    },
+    {
+      "trait_type": "Profile",
+      "value": "Founder & CEO | Board Member | Advisor"
+    },
+    {
+      "trait_type": "Network",
+      "value": "Ethereum Mainnet"
+    },
+    {
+      "trait_type": "Image Mood",
+      "value": "Warm friendship, celebration and entrepreneurial connection"
+    }
+  ]
+}
