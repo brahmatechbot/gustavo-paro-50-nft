@@ -1,0 +1,23 @@
+{
+  "status": "blocked_by_circle_paymaster_policy",
+  "network": "Ethereum Mainnet",
+  "chain": "ETH",
+  "wallet": "0xfb7aee27a5a34cf09e2aca73b8e01c7fb3e0197a",
+  "contractName": "GustavoParo50",
+  "symbol": "PARO50",
+  "metadataBaseURI": "https://brahmatechbot.github.io/gustavo-paro-50-nft/metadata/",
+  "tokenURI": "https://brahmatechbot.github.io/gustavo-paro-50-nft/metadata/1.json",
+  "factory": "0xce0042B868300000d44A59004Da54A005ffdcf9f",
+  "factoryMethod": "deploy(bytes,bytes32)",
+  "salt": "0x521a86915441311de2b9aeadad72e0078cf7c63d9aa776cad4d9d3dde112213f",
+  "expectedContractAddressFromEthCall": "0xe36F1C01b98866D0A2b866918dcd08c4d2b97fDc",
+  "circleEstimate": {
+    "gasLimit": "767123",
+    "networkFee": "0.001805540615415166 ETH",
+    "callGasLimit": "95629",
+    "verificationGasLimit": "90241",
+    "preVerificationGas": "400771"
+  },
+  "lastError": "PAYMASTER_POLICY_EXCEED_MAX_SPEND_USD_PER_TX",
+  "note": "Circle estimated the deployment successfully, but the actual transaction was rejected by the Circle paymaster policy. The wallet limit must be raised by the user via Circle OTP before retrying. No contract was deployed by this failed attempt."
+}
