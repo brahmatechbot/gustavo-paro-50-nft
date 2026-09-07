@@ -19,5 +19,16 @@
     "preVerificationGas": "400771"
   },
   "lastError": "PAYMASTER_POLICY_EXCEED_MAX_SPEND_USD_PER_TX",
-  "note": "Circle estimated the deployment successfully, but the actual transaction was rejected by the Circle paymaster policy. The wallet limit must be raised by the user via Circle OTP before retrying. No contract was deployed by this failed attempt."
+  "feedbackReference": "3992bc19-e39f-5ff7-868c-5859a634dd7c",
+  "verifiedCurrentPolicy": {
+    "stablecoinTransfer": {
+      "perTxLimit": "10",
+      "dailyLimit": "25",
+      "weeklyLimit": "50",
+      "monthlyLimit": "100",
+      "origin": "CUSTOM"
+    }
+  },
+  "nextRequiredAction": "Set a CONTRACT transfer-limit policy, not only STABLECOIN_TRANSFER, because Circle rejects contract execution/deployment under a separate paymaster spend policy.",
+  "note": "Circle estimated the deployment successfully, but the actual transaction was rejected by the Circle paymaster policy. After the user raised stablecoin limits, retry still failed with the same error, indicating the deployment needs a contract execution policy/limit update. No contract was deployed by these failed attempts."
 }
