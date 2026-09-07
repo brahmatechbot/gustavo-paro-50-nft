@@ -6,23 +6,13 @@ Projeto ERC-721 one-of-one em homenagem ao aniversário de 50 anos de Gustavo Pa
 - Token metadata: `metadata/1.json`
 - Collection metadata: `metadata/collection.json`
 - Image asset: `assets/gustavo-paro-50.jpg`
-- GitHub Pages metadata base: `https://brahmatechbot.github.io/gustavo-paro-50-nft/metadata/`
+- GitHub Pages: `https://brahmatechbot.github.io/gustavo-paro-50-nft/`
 
 ## Contract
 
-`GustavoParo50` is an ERC-721 using OpenZeppelin. The constructor receives:
+`GustavoParo50` usa o ERC-721 da OpenZeppelin e cria exatamente o token `#1` no construtor. O destinatário é passado explicitamente para evitar depender de `msg.sender` durante deploy por smart-account/factory da Circle.
 
-1. `initialBaseURI`
-2. `initialOwner`
-3. `tributeRecipient`
-
-The constructor mints token ID `1` to `tributeRecipient` and uses token URI:
-
-```text
-<baseURI><tokenId>.json
-```
-
-For this project:
+O endereço do metadata é imutável no bytecode:
 
 ```text
 https://brahmatechbot.github.io/gustavo-paro-50-nft/metadata/1.json
@@ -35,6 +25,6 @@ forge build
 forge test
 ```
 
-## Deployment note
+## Deployment
 
-The intended deployment chain is Ethereum mainnet. Because Circle Agent Wallet deploys through an SCA/factory, the owner and tribute recipient are passed explicitly as constructor arguments instead of relying on `msg.sender`.
+Rede pretendida: Ethereum mainnet. O deploy é preparado pela Circle Agent Wallet usando um factory CREATE2, com endereço previsto documentado em `deployments/ethereum-mainnet.plan.json`.
