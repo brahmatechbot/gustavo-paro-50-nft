@@ -27,4 +27,11 @@ forge test
 
 ## Deployment
 
-Rede pretendida: Ethereum mainnet. O deploy é preparado pela Circle Agent Wallet usando um factory CREATE2, com endereço previsto documentado em `deployments/ethereum-mainnet.plan.json`.
+Deploy concluído na Ethereum mainnet:
+
+- Contract: [`0xfdfc612c11426f257e0044de971dad7076635126`](https://etherscan.io/address/0xfdfc612c11426f257e0044de971dad7076635126)
+- Transaction: [`0xe93504bca356dc648afd25638f4b570f61026f8b7845ce05ad43e47615568b43`](https://etherscan.io/tx/0xe93504bca356dc648afd25638f4b570f61026f8b7845ce05ad43e47615568b43)
+- Token `#1` owner: `0xfb7aee27a5a34cf09e2aca73b8e01c7fb3e0197a`
+- Deployment record: `deployments/ethereum-mainnet.json`
+
+O contrato foi implantado pelo signer isolado de `/usr/local/bin/hermes-deploy.sh`. O token `#1` foi cunhado diretamente para a Circle Agent Wallet definida no argumento do construtor.
